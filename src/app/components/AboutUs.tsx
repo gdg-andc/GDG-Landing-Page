@@ -1,23 +1,11 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+
 
 const AboutUs = () => {
   return (
     <main className="max-w-7xl mx-auto px-6 py-16">
         <h2 className="text-4xl font-bold text-center text-purple-400 mb-6">About Us</h2>
-      {/* Banner Image */}
-      <div className="my-8 overflow-hidden text-center rounded-xl shadow-xl">
-      
-        <Image
-          src="/gdg-banner-white.jpeg"
-          alt="GDG ANDC Banner"
-          width={1200}
-          height={400}
-          quality={100}
-          className="object-cover w-full h-full transition-all"
-        />
-      </div>
+     
 
       {/* About Us Section */}
       <section className="text-center mb-12 space-y-6">
@@ -117,59 +105,8 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Connect with Us Section */}
-      <section className="mb-12 space-y-8 text-center bg-gray-900 py-12 rounded-lg shadow-xl">
-        <h2 className="text-4xl font-bold text-purple-400 mb-6 tracking-tight">
-          Connect with Us
-        </h2>
-        <p className="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed px-4 sm:px-6 md:px-8">
-          Stay updated on our events, workshops, and community initiatives by
-          following us on social media. Join our community and let&apos;s grow
-          together!
-        </p>
-
-        {/* Social Media Buttons */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
-          {[
-            {
-              name: "GDG Community",
-              link: process.env.NEXT_PUBLIC_GDG_COMMUNITY_URL,
-            },
-            { name: "LinkedIn", link: process.env.NEXT_PUBLIC_LINKEDIN_URL },
-            { name: "Instagram", link: process.env.NEXT_PUBLIC_INSTAGRAM_URL },
-            { name: "YouTube", link: process.env.NEXT_PUBLIC_YOUTUBE_URL },
-          ].map(({ name, link }) => (
-            <a
-              key={name}
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex justify-center items-center space-x-4 transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
-            >
-              <Button className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 w-full max-w-xs rounded-full font-semibold text-sm shadow-md transition-all group-hover:scale-105 group-hover:shadow-lg group-hover:ring-2 group-hover:ring-purple-500 group-hover:ring-opacity-50">
-                {name}
-              </Button>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      {/* Get Involved Section */}
-      <section className="mb-12 space-y-6">
-        <h3 className="text-3xl font-semibold text-purple-400 mb-6 text-center">
-          Get Involved
-        </h3>
-        <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto text-justify">
-          We welcome contributions from everyone! Whether you&apos;re interested
-          in joining our events, contributing to our open-source projects, or
-          sharing your knowledge through workshops, there&apos;s always
-          something happening at GDG on Campus, ANDC.
-        </p>
-        <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto text-justify">
-          Check out our open issues in the repository to see how you can get
-          involved, or feel free to reach out to us on our socials!
-        </p>
-      </section>
+     
+     
 
       {/* Contact Us Section */}
       <section className="space-y-6 text-center bg-gray-900 py-12 rounded-lg shadow-xl">

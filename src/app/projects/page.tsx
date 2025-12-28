@@ -1,5 +1,5 @@
 // src/app/projects.tsx
-import Projects from "@/components/Project"; 
+import Projects from "@/app/components/Project"; 
 
 export default function ProjectsPage() {
   return (
