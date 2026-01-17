@@ -2,6 +2,7 @@
 import React from 'react';
 import EventCard from './ui/event-card';
 import { eventsData } from '@/app/events/eventsData';
+import { join } from 'path/win32';
 
 // HOME PAGE: Single Featured Event Component
 const HomeEventsSection: React.FC = () => {
@@ -51,5 +52,5 @@ const HomeEventsSection: React.FC = () => {
     </section>
   );
 };
-
+  
 export default HomeEventsSection;
