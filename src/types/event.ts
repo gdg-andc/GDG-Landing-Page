@@ -1,4 +1,4 @@
-export type EventCategory = 'Workshop' | 'Bootcamp' | 'Seminar' | 'Orientation';
+export type EventCategory = 'Workshop' | 'Bootcamp' | 'Seminar' | 'Orientation' | 'Hackathon' | 'Webinar' | 'Conference' | 'Meetup';
 
 export interface Event {
   id: number;

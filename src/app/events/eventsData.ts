@@ -2,7 +2,18 @@ import { Event } from '@/types/event';
 
 export const eventsData: { active: Event[]; past: Event[] } = {
   active: [
-
+{
+      id: 1,
+      name: "Tech Sprint Hackathon 2026(Finalee)",
+      description: "TechSprint is a GDG on Campus ANDC–led hackathon aimed at fostering innovation problem-solving, and practical application of modern AI and Google technologies .",
+      date: "19 January 2026",
+      time: "",
+      location: "Seminar Hall, Acharya Narendra Dev College, University of Delhi",
+      signUpLink: "https://gdg-andc.vercel.app/",
+      category: "Hackathon" ,
+      attendees: "All Students and Tech Enthusiasts Welcome",
+      attendeesCount: null
+    },
   ],
   past: [
     {
